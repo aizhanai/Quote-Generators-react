@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  box-sizing: inherit;
+}
+
+.App {
+  font-family: sans-serif;
+  background-color: var(--app-background);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote__block {
+  background-color: #fff;
+  padding: 30px;
+  width: 70%;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+.quote__block .quote__text {
+  color: var(--app-background);
+  margin-bottom: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 1.4;
+}
+
+.quote__block .quote__author {
+  color: var(--app-background);
+  font-weight: lighter;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+.quote__block .quote__controls {
+  margin-top: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote__block .quote__controls--button {
+  background-color: var(--app-background);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
